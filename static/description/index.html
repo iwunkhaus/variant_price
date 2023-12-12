@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+   </head>
+   <body>
+      
+      <!-- heading  -->
+      <section id="dynamic_pricelist_module_heading" style="padding-top: 50px;">
+         <div class="container">
+            <div class="sh_center text-center">
+
+               <h4 class="oe_slogan" style="color: #154577; font-size: 30px; font-weight: 900; margin-top: 48px; margin-bottom: 48px;">Product/Variant List View With Dynamic Pricelist Price</h4>
+
+            <!--    <h4 style="font-size: 30px;font-weight: 600;color: #3363c1;margin-bottom: 10px;">
+                  <span class="fa fa-star fa-spin"/>Product Listview With Dynamic Pricelist Price </h4> -->
+               <!-- <img src="test.png" alt="heading"/> -->
+
+               <p style="color: #777;font-size: 18px;margin: 0;letter-spacing: 1px;margin-top: 12px;">
+                  This module allows to display Multiple Pricelists at the Product/Variant list view dynamically. It allows to edit/update the pricelist price from both Pricelist screen and Product/Variant list view. It works for the pricelist(s) item based on the Product/Variant with fixed price.
+               </p>
+            </div>
+         </div>
+      </section>
+      
+      <section id="dynamic_pricelist_feature" style="padding-top: 50px;background-color: transparent;">
+         <div class="container">
+            <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4 text-center">
+                <h3 class="oe_slogan" style="background-color: #de6b14; border-color: #de6b14; color: #FFFFFF; padding: 5px 28px; border-radius: 15px 0 15px 0; opacity: 1;"><b>Module Features</b></h3>
+            </div>
+            <!-- <div class="sh_center text-center mb-5">
+               <h4 style="font-size: 28px;font-weight: 600;color: #3363c1;margin-bottom: 10px;">Features</h4>
+               <hr style="width: 100px;border-width: 2px;border-color: #3363c1;" />
+               <img src="heading.png" alt="heading" />
+            </div> -->
+      <div id="Feature" class="tab-pane active">
+         <ul style="padding: 0;list-style: none;">
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Provides configurable option to Enable the Pricelist(s) dynamically at the Product list view or Product-Variant list view.
+               </li>
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Provides option to enable the Pricelist(s) in the Product-Variant list view [provided the Variants option checked from Sales -> Configuration -> Settings -> Product Catalog section].
+               </li>
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Enables Multiple Pricelists [with a fixed price] in the Product/Variant list view [depending on the - Enable Pricelist In - options - 1) Product List View 2) Product Variant List View].
+               </li>
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Provides option to edit/enter the Pricelist Price from the Product/Variant list view and vice versa.
+               </li>
+               
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Provides option to edit/enter the Pricelist Price from the Product/Variant form view as well.
+               </li>
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Module compatible with Single and Multi-Company setup.
+               </li>
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Module supports company_dependent/Multi-Company Rules. Pricelist Price can be configured company specific, in which those pricelists are allowed to edit/update the price from Product/Variant list view with pricelist company specific login only.
+               </li>
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Module supports easy Delete of Pricelist(s) which in-turn removes the dynamic pricelists from Product/Variant list view.
+               </li>
+               <li class="shadow rounded" style="padding: 20px;margin-bottom: 20px;font-size: 16px;color: #212121;font-weight: 600;letter-spacing: 1px;display: block;border-radius: 0.25rem !important;"><span class="fa fa-arrow-right" style="color: #154577;font-weight: 600;font-size: 18px;padding-right: 10px;"></span>
+                  Module supports easy Archive/UnArchive of Pricelist(s). On Archive it removes the dynamic pricelists from Product/Variant list view and On UnArchive it enables back in the respective Product/Varaint List View [provided if they were enabled during Archive].
+               </li>
+               
+         </ul>
+      </div>
+   </div>
+</section>
+
+<section id="dynamic_pricelist_workflow" style="padding-top: 50px;background-color: transparent;">
+   <div class="container">
+      <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4 text-center">
+          <h3 class="oe_slogan" style="background-color: #de6b14; border-color: #de6b14; color: #FFFFFF; padding: 5px 28px; border-radius: 15px 0 15px 0; opacity: 1;"><b>Usage</b></h3>
+      </div>
+      
+      <h4 class="oe_slogan" style="font-size:24px;font-family:times new roman;color:#154577;">
+                  <span class="label">
+                  <span class="fa fa-star fa-spin"/>
+                       Dynamic Pricelist at Product List View
+                  <span class="fa fa-star fa-spin"/>
+                  </span>
+               </h4>
+       <img src="ProductListView.gif" alt="Product List View" /><br><br>
+      
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>1. Enable "Product Dynamic Pricelist Access" to show pricelist to that user.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img1.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>2. Enable "Pricelists" with advance price rules in order to display product pricelists.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img2.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>3. Now go to pricelist and create a pricelist<br/>
+      if you want to show the pricelist in Product List View, Enable "Product List View" option</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img3.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>4. Click on Add a line to add product to the pricelist<br/>
+         This will open wizard, here you can apply a pricelist on the product(product template) and fixed price only</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img4.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>5. Click on Save</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img5.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>6. Pricelist inside the product list view,<br/>
+here we can see all the pricelist where Product List View checkbox is ticked</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img6.png" style="width: 100%;" />
+      </div><br/>
+
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>7. you can edit the pricelist value for particular product from list view</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img7.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>8. when you edit the pricelist value from the list view, that price auto-change in the pricelist form.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img8.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>9. You can add any product to pricelist that is not yet configured/present in the respective pricelist item just by adding pricelist price from the list view<br/>
+it gets added into the pricelist and price will be updated</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img9.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>10. you can also add product/update Pricelist price to the pricelist from Product form view.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img10.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>11. you can also create the company dependant pricelist for the product<br/>
+to create a company dependant pricelist select the company and add product to the pricelist.
+</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img11.png" style="width: 100%;" />
+      </div><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img12.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>12. In pricelist list view you can see the company dependant and company independant pricelist</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img13.png" style="width: 100%;" />
+      </div><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img14.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>13. In product list view you can manage the company dependant and company indendant pricelist value.<br/>
+      for company dependant pricelist you can only see/manage the selected company pricelist, other company pricelist value will remain invisible</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img15.png" style="width: 100%;" />
+      </div><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img16.png" style="width: 100%;" />
+      </div><br/>
+   <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>14. like this you can manage the multiple company dependant/ company independant pricelist</b>
+      </p><br/>
+   <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>15. You can delete/archive the pricelist, on delete/archive it will remove the pricelist cloumn from the product list view.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img17.png" style="width: 100%;" />
+      </div><br/>
+
+   <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>16. Here you can see the deleted/archived pricelist are not visible in Product List View.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img18.png" style="width: 100%;" />
+      </div><br/>
+   </div>
+<!-- </section>
+
+<section id="dynamic_vaiant_pricelist_workflow" style="padding-top: 50px;background-color: transparent;">
+   <div class="container">
+      <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4 text-center">
+          <h3 class="oe_slogan" style="background-color: #de6b14; border-color: #de6b14; color: #FFFFFF; padding: 5px 28px; border-radius: 15px 0 15px 0; opacity: 1;"><b>Product Variant Pricelist</b></h3>
+      </div> -->
+            
+      <h4 class="oe_slogan" style="font-size:24px;font-family:times new roman;color:#154577;">
+                  <span class="label">
+                  <span class="fa fa-star fa-spin"/>
+                       Dynamic Pricelist at Product-Variant List View 
+                  <span class="fa fa-star fa-spin"/>
+                  </span>
+               </h4>
+               <img src="VariantListView.gif" alt="Variant List View" />
+      
+      
+      
+<!--       <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>1. Enable "Product Dynamic Pricelist Access" to show pricelist to that user.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img1.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>2. Enable "Pricelists" with advance price rules in order to display product pricelists.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img2.png" style="width: 100%;" />
+      </div><br/> -->
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>1. Go to pricelist and create a pricelist<br/>
+      if you want to show the pricelist in Product Variant List View, Enable "Product Variant View" option</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img19.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>2. Click on Add a line to add product variant to the pricelist<br/>
+         This will open wizard, here you can apply a pricelist on the product variant and fixed price only</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img20.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>3. Click on Save</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img21.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>4. Pricelist inside the product Variant list view,<br/>
+here we can see all the pricelist where Product Variant View checkbox is ticked</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img22.png" style="width: 100%;" />
+      </div><br/>
+
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>6. you can edit the pricelist value for particular product from list view</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img23.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>7. when you edit the pricelist value from the list view, that price auto-change in the pricelist form.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img24.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>8. You can add any variant to pricelist that is not yet configured/present in the respective pricelist item just by adding pricelist price from the list view<br/>
+it gets added into the pricelist and price will be updated</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img25.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>9. you can also add product variant/update Pricelist price to the pricelist from Product Variant form view.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img26.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>10. you can also create the company dependant pricelist for the product Variant<br/>
+to create a company dependant pricelist select the company and add product variant to the pricelist.
+</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img27.png" style="width: 100%;" />
+      </div><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img28.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>11. In pricelist list view you can see the company dependant and company independant pricelist</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img29.png" style="width: 100%;" />
+      </div><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img30.png" style="width: 100%;" />
+      </div><br/>
+      <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>12. In product variant list view you can manage the company dependant and company indendant pricelist value.<br/>
+      for company dependant pricelist you can only see/manage the selected company pricelist, other company pricelist value will remain invisible</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img31.png" style="width: 100%;" />
+      </div><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img32.png" style="width: 100%;" />
+      </div><br/>
+   <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>13. like this you can manage the multiple company dependant/ company independant pricelist</b>
+      </p><br/>
+   <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>14. You can delete/archive the pricelist, on delete/archive it will remove the pricelist cloumn from the product variant list view.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img33.png" style="width: 100%;" />
+      </div><br/>
+
+   <p style="color: #212121;font-size: 14px;letter-spacing: .5px;"><b>15. Here you can see the deleted/archived pricelist are not visible in product variant list view.</b>
+      </p><br/>
+      <div class="col-md-12">
+         <img class="img-responsive rounded shadow" src="img34.png" style="width: 100%;" />
+      </div><br/>
+   </div>
+</section>
+
+<!-- <section id="dynamic_pricelist__tab" style="padding-top: 50px;background-color: transparent;">
+   <div class="">
+      
+      <div class="tab-content" style="padding-top: 30px;background-color: transparent;padding-bottom: 30px;">
+         
+         <div id="Configurations" class="tab-pane active">
+            <section id="dynamic_pricelist__configuration">
+               <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4 text-center">
+                   <h3 class="oe_slogan" style="background-color: #de6b14; border-color: #de6b14; color: #FFFFFF; padding: 5px 28px; border-radius: 15px 0 15px 0; opacity: 1;"><b>Usage</b></h3>
+               </div>
+               <h4 class="oe_slogan" style="font-size:24px;font-family:times new roman;color:#154577;">
+                  <span class="label">
+                  <span class="fa fa-star fa-spin"/>
+                       Dynamic Pricelist at Product List View
+                  <span class="fa fa-star fa-spin"/>
+                  </span>
+               </h4>
+               <img src="ProductListView.gif" alt="Product List View" /><br><br>
+               <h4 class="oe_slogan" style="font-size:24px;font-family:times new roman;color:#154577;">
+                  <span class="label">
+                  <span class="fa fa-star fa-spin"/>
+                       Dynamic Pricelist at Product-Variant List View 
+                  <span class="fa fa-star fa-spin"/>
+                  </span>
+               </h4>
+               <img src="VariantListView.gif" alt="Variant List View" />
+            </section>
+         </div>
+      </div>
+   </div>
+</section>
+ -->
+
+   <section class="oe_container">
+      <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4 text-center">
+         <h3 class="oe_slogan" style="background-color: #de6b14; border-color: #de6b14; color: #FFFFFF; padding: 5px 28px; border-radius: 15px 0 15px 0; opacity: 1;"><b>Support</b></h3>
+      </div>
+        <p style="font-size:20px;text-align:left;color:grey;">&bull; 90 days free support in case any bugs or issue.</p>        
+    </section>
+    <hr/>
+
+    <section style="color: #db411f; background-color: #FFFFFF;">
+        <div class="row">
+            <div class="col-md-4" style="vertical-align:baseline;">
+            	<br/>
+                <p style="font-size:20px;text-align:left;color:grey;">For Demo & Support Request</p>
+            </div>
+            <div class="col-md-2">
+            	<br/>
+                <a class="btn btn-primary btn-lg pull-left"
+                   style="color: #FFFFFF !important;background-color: #db411f;vertical-align:center;"
+                   href="mailto:mailto:appsupport@rminds.com" ><i class="fa fa-paper-plane"></i> Email Us</a>
+            </div>            
+            <div class="col-md-6" style="vertical-align:baseline;">                
+                <a href="http://www.rminds.com/contactus" target='_blank' title="RMinds Inc.">
+                        <img class="img-responsive" src="company.png" alt="rminds.com" style="display: block; margin: 0 auto;">
+                    </a>
+                </h3>
+            </div>            
+        </div>
+    </section>
+
+
+
+
+   </body>
+</html>
